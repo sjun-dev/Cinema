@@ -1,0 +1,8 @@
+/* style-layout */
+fieldset{border:none}
+h3{margin:0; text-align:center}
+p{padding:0; margin:0}
+article{display:block; text-align:center; padding:0; margin:0}
+div{display:inline-block; vertical-align:middle; margin:57px; padding:30px}
+#register_name, #register_tel, #register_email, #register_id, #register_pw, #register_pw_check{vertical-align:middle}
+#valid_check, #register{text-align:center}

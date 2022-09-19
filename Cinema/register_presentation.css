@@ -1,0 +1,7 @@
+/* style-presentation */
+p{font-size:20pt; font-weight:bold}
+h3{color:orange; font-size:30pt}
+div{background:white; border:5px; border-style:solid; border-color:orange}
+#register_name, #register_tel, #register_email, #register_id, #register_pw, #register_pw_check{font-size:20pt}
+#valid_check, #register{font-size:15pt; font-weight:bold}
+#go_to_login{color:blue; font-size:20pt; font-weight:bold}

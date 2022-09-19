@@ -1,0 +1,7 @@
+/* style-layout */
+h3{padding-bottom:20px; text-align:center}
+p{padding:0; margin:0}
+article{display:block; text-align:center; padding:0; margin:0}
+div{display:inline-block; margin-left:50px; text-align:left; vertical-align:middle}
+#book_button, #trailer_button{text-align:center}
+#control_bar{position:fixed; right:20px; top:300px; text-align:center; vertical-align:middle}

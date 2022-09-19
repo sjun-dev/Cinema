@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>영화 예매</title>
+  <link rel="stylesheet" type="text/css" href="movie_booking_size.css"/>
+  <link rel="stylesheet" type="text/css" href="movie_booking_layout.css"/>
+  <link rel="stylesheet" type="text/css" href="movie_booking_presentation.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_size.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_layout.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_presentation.css"/>
+ </head>
+ <body onload="pageLoad();">
+  <header>
+   <a href="main.html" id="logo"><h2>BLACKBOX THEATER</h2></a> 
+  </header>
+  <nav>
+   <ul>
+    <li><a href="theater_info.html" id="Theater_info_title">극장 소개</a></li>
+    <li><a href="movie_list.html" id="Movie_list_title">상영 영화</a></li>
+    <li><a href="movie_booking.html" id="Movie_booking_title">영화 예매</a></li>
+    <li><a href="cafeteria.html" id="cafeteria_title">카페테리아</a></li>
+   </ul>
+  </nav>
+  <article>
+   <br><br><h3>좌석배치도</h3><br><br>
+   <p>SCREEN</p>
+   <table border="1" id="seats">
+	<tbody>
+	 <tr id="A"><td rowspan="6" colspan="4"></td><td>A1</td><td>A2</td><td>A3</td><td>A4</td><td>A5</td><td>A6</td>
+	 <td>A7</td><td>A8</td><td>A9</td><td>A10</td><td>A11</td><td>A12</td><td rowspan="6" colspan="4"></td></tr>
+	 <tr id="B"></td><td>B1</td><td>B2</td><td>B3</td><td>B4</td><td>B5</td><td>B6</td>
+	 <td>B7</td><td>B8</td><td>B9</td><td>B10</td><td>B11</td><td>B12</td></td></tr>
+	 <tr id="C"></td><td>C1</td><td>C2</td><td>C3</td><td>C4</td><td>C5</td><td>C6</td>
+	 <td>C7</td><td>C8</td><td>C9</td><td>C10</td><td>C11</td><td>C12</td></td></tr>
+	 <tr id="D"></td><td>D1</td><td>D2</td><td>D3</td><td>D4</td><td>D5</td><td>D6</td>
+	 <td>D7</td><td>D8</td><td>D9</td><td>D10</td><td>D11</td><td>D12</td></tr>
+	 <tr id="E"></td><td>E1</td><td>E2</td><td>E3</td><td>E4</td><td>E5</td><td>E6</td>
+	 <td>E7</td><td>E8</td><td>E9</td><td>E10</td><td>E11</td><td>E12</td></tr>
+	 <tr id="F"></td><td>F1</td><td>F2</td><td>F3</td><td>F4</td><td>F5</td><td>F6</td>
+	 <td>F7</td><td>F8</td><td>F9</td><td>F10</td><td>F11</td><td>F12</td></tr>
+	 <tr id="corridor"><td colspan="20"></td></tr>
+	 <tr id="corridor"><td colspan="20"></td></tr>
+	 <tr id="corridor"><td colspan="20"></td></tr>
+	 <tr id="G"></td><td>G1</td><td>G2</td><td>G3</td><td></td><td>G4</td><td>G5</td><td>G6</td>
+	 <td>G7</td><td>G8</td><td>G9</td><td>G10</td><td>G11</td><td>G12</td><td>G13</td><td>G14</td><td>G15</td>
+	 <td></td><td>G16</td><td>G17</td><td>G18</td></tr>
+	 <tr id="H"></td><td>H1</td><td>H2</td><td>H3</td><td></td><td>H4</td><td>H5</td><td>H6</td>
+	 <td>H7</td><td>H8</td><td>H9</td><td>H10</td><td>H11</td><td>H12</td><td>H13</td><td>H14</td><td>H15</td>
+	 <td></td><td>H16</td><td>H17</td><td>H18</td></tr>
+	 <tr id="I"></td><td>I1</td><td>I2</td><td>I3</td><td></td><td>I4</td><td>I5</td><td>I6</td>
+	 <td>I7</td><td>I8</td><td>I9</td><td>I10</td><td>I11</td><td>I12</td><td>I13</td><td>I14</td><td>I15</td>
+	 <td></td><td>I16</td><td>I17</td><td>I18</td></tr>
+	 <tr id="J"></td><td>J1</td><td>J2</td><td>J3</td><td></td><td>J4</td><td>J5</td><td>J6</td>
+	 <td>J7</td><td>J8</td><td>J9</td><td>J10</td><td>J11</td><td>J12</td><td>J13</td><td>J14</td><td>J15</td>
+	 <td></td><td>J16</td><td>J17</td><td>J18</td></tr>
+	 <tr id="K"></td><td>K1</td><td>K2</td><td>K3</td><td></td><td>K4</td><td>K5</td><td>K6</td>
+	 <td>K7</td><td>K8</td><td>K9</td><td>K10</td><td>K11</td><td>K12</td><td>K13</td><td>K14</td><td>K15</td>
+	 <td></td><td>K16</td><td>K17</td><td>K18</td></tr>
+	 <tr id="L"></td><td>L1</td><td>L2</td><td>L3</td><td></td><td>L4</td><td>L5</td><td>L6</td>
+	 <td>L7</td><td>L8</td><td>L9</td><td>L10</td><td>L11</td><td>L12</td><td>L13</td><td>L14</td><td>L15</td>
+	 <td></td><td>L16</td><td>L17</td><td>L18</td></tr>
+	</tbody>
+   </table><br><br>
+   <script type="text/javascript">
+    var table = document.getElementById("seats");
+	var cells = table.getElementsByTagName("td");
+	
+	for(i = 0; i < cells.length; i++){
+	 if(cells[i].innerHTML.length > 0){
+	  cells[i].onclick = function(){alert("예매인원을 선택해주세요.");};
+	 }
+	}
+	
+	function changeColor(x){
+	 count = 0;
+	 
+	 for(i = 0; i < cells.length; i++){
+	  if(cells[i].style.background == "red"){
+	   count++;
+	  }
+	 }
+	 
+	 limit = parseInt(document.getElementById("adult").value) + parseInt(document.getElementById("kid").value);
+	 
+	 if(count < limit){
+	  if(x.style.background != "red"){
+	   x.style.background = "red";
+	  }
+	  else{
+	   result = confirm(x.innerHTML+" 좌석을 취소하시겠습니까?");
+	   if(result){
+	    x.style.background = null;
+	   }
+	  }
+	 }
+	 else if(count == limit){
+	  if(x.style.background == "red"){
+	   result = confirm(x.innerHTML+" 좌석을 취소하시겠습니까?");
+	   if(result){
+	    x.style.background = null;
+	   }
+	  }
+	  else{
+	   alert("선택하신 인원을 초과하였습니다.");
+	  }
+	 }
+	}
+	
+	function sendNum(){
+	 adult = parseInt(document.getElementById("adult").value);
+	 kid = parseInt(document.getElementById("kid").value);
+	 limit = adult + kid;
+	 count = 0;
+	 
+	 for(i = 0; i < cells.length; i++){
+	  if(cells[i].style.background == "red"){
+	   count++;
+	  }
+	 }
+	 
+	 if(count > limit){
+	  alert("변경된 인원수가 선택하신 좌석수보다 적습니다. 좌석을 다시 선택해주세요.")
+	  for(i = 0; i < cells.length; i++){
+	   if(cells[i].innerHTML.length > 0){
+	    cells[i].style.background = null;
+	   }
+ 	  }
+	 }
+	 
+	 if(limit > 4){
+	  alert("최대 예매 가능 인원은 4명입니다.");
+	  document.getElementById("adult").value = parseInt(window.sessionStorage["adult"]);
+	  document.getElementById("kid").value = parseInt(window.sessionStorage["kid"]);
+	 }
+	 else{
+	  window.sessionStorage.setItem("adult", document.getElementById("adult").value);
+	  window.sessionStorage.setItem("kid", document.getElementById("kid").value);
+	  for(i = 0; i < cells.length; i++){
+	   if(cells[i].innerHTML.length > 0){
+	    cells[i].onclick = function(){changeColor(this);};
+	   }
+	  }
+	 }
+	}
+	
+	function showInfo(){
+	 adult = parseInt(document.getElementById("adult").value);
+	 kid = parseInt(document.getElementById("kid").value);
+	 limit = adult + kid;
+	 movie = parseInt(document.getElementById("movie_name").value);
+	 date = document.getElementById("movie_date").value;
+	 time = parseInt(document.getElementById("movie_time").value);
+	 price = 10000*adult + 7000*kid
+	 count = 0;
+	 str = "";
+	 err = "";
+	 	 
+	 if(movie == 0){
+	  err = err+"영화";
+	 }
+	 if(limit == 0){
+	  if(err.length > 1){
+	   err = err+", ";
+	  }
+	  err = err+"관람 인원"
+	 }
+	 if(date == ""){
+	  if(err.length > 0){
+	   err = err+", ";
+	  }
+	  err = err+"관람 날짜"
+	 }
+	 if(time == 0){
+	  if(err.length > 1){
+	   err = err+", ";
+	  }
+	  err = err+"관람 시간"
+	 }
+	 
+	 for(i = 0; i < cells.length; i++){
+	  if(cells[i].style.background == "red"){
+	   count++;
+	   str = str + cells[i].innerHTML + " ";
+	  }
+	 }
+	 
+	 if(count < limit){
+	  alert("선택하신 좌석이 예매인원보다 적습니다. 좌석을 다시 한 번 확인해주세요.");
+	 }
+	 else if(err.length > 1){
+	  alert(err+" 미기입.\n해당 정보를 선택해주세요.");
+	 }
+	 else{
+	  result = confirm("총 "+count+"개의 좌석, "+price+"원 입니다.\n"+str+"좌석을 예매하시겠습니까?\n");
+	  if(result){
+	   saveData();
+	  }
+	 }
+	}
+	
+	function pageLoad(){
+	 document.getElementById("movie_name").value = 0;
+	 document.getElementById("adult").value = 0;
+	 document.getElementById("kid").value = 0;
+	 document.getElementById("movie_date").value = "";
+	 document.getElementById("movie_time").value = 0;
+	 
+	 if(window.localStorage.length > 1){
+	  movieBooked = parseInt(window.localStorage["count"]);
+	 }
+	 else{
+	  movieBooked = 0;
+	 }
+	 
+	 window.localStorage.setItem("count", movieBooked);
+	 
+	 for(i = 0; i < cells.length; i++){
+	  if(cells[i].innerHTML.length > 0){
+	   cells[i].style.background = null;
+	  }
+ 	 }
+	}
+	
+	function saveData(){
+	 localStorage = window.localStorage;
+	 movieName = document.getElementById("movie_name");
+	 adultNum = document.getElementById("adult");
+	 kidNum = document.getElementById("kid");
+	 date = document.getElementById("movie_date");
+	 time = document.getElementById("movie_time");
+	 movieBooked = localStorage["count"];
+	 seats = "";
+	 
+	 for(i = 0; i < cells.length; i++){
+	  if(cells[i].style.background == "red"){
+	   seats += cells[i].innerHTML + " ";
+	  }
+	 }
+	 
+	 if(localStorage.length < 11){
+	  if(adultNum.value == 0){
+	   movieBooked++;
+	   localStorage.setItem("count", movieBooked);
+	   localStorage.setItem("booking"+(movieBooked), ["제목 : " + movieName.options[movieName.selectedIndex].text, " 학생 : " + kidNum.options[kidNum.selectedIndex].text, " 날짜 : " + date.value, " 시간 : " + time.options[time.selectedIndex].text, " 좌석번호 : " + seats]);
+	  }
+	  else if(kidNum.value == 0){
+	   movieBooked++;
+	   localStorage.setItem("count", movieBooked);
+	   localStorage.setItem("booking"+(movieBooked), ["제목 : " + movieName.options[movieName.selectedIndex].text, " 성인 : " + adultNum.options[adultNum.selectedIndex].text, " 날짜 : " + date.value, " 시간 : " + time.options[time.selectedIndex].text, " 좌석번호 : " + seats]);
+	  }
+	  else{
+	   movieBooked++;
+	   localStorage.setItem("count", movieBooked);
+	   localStorage.setItem("booking"+(movieBooked), ["제목 : " + movieName.options[movieName.selectedIndex].text, " 성인 : " + adultNum.options[adultNum.selectedIndex].text, " 학생 : " + kidNum.options[kidNum.selectedIndex].text, " 날짜 : " + date.value, " 시간 : " + time.options[time.selectedIndex].text, " 좌석번호 : " + seats]);
+	  }
+	  choose = confirm("예매가 완료되었습니다. 예매 확인 페이지로 이동하시겠습니까?");
+	  if(choose){
+	   document.location.href="check_booking.html";
+	  }
+	  else{
+	   pageLoad();
+	  }
+	 }
+	 else{
+	  alert("최대 예매 가능한 영화의 수를 초과하였습니다.");
+	  pageLoad();
+	 }
+	}
+   </script>
+   <form method="post">
+    <h3>예매 정보</h3><br>
+	<fieldset style="width:500px" align="right">
+	 영화 : <select name="movie" id="movie_name" size="1">
+	  <option value="0" selected>-</option>
+	  <option value="1">레이니 데이 인 뉴욕</option>
+	  <option value="2">패왕별희 디 오리지널</option>
+	  <option value="3">1917</option>
+	  <option value="4">알리타-배틀 엔젤</option>
+	  <option value="5">저 산 너머</option>
+	  <option value="6">라라랜드</option>
+	 </select><br>
+     성인(\10000) : <select name="price" id="adult" size="1" onchange="sendNum();">
+	  <option value="0" selected>-</option>
+	  <option value="1">1명</option> 
+      <option value="2">2명</option>
+	  <option value="3">3명</option>
+	  <option value="4">4명</option>
+	 </select><br>
+	 학생(\7000) : <select name="price" id="kid" size="1" onchange="sendNum();">
+	  <option value="0" selected>-</option>
+	  <option value="1">1명</option> 
+      <option value="2">2명</option>
+	  <option value="3">3명</option>
+	  <option value="4">4명</option>
+	 </select><br>
+	 날짜 : <input type="date" name="book_date" id="movie_date"/><br>
+	 시간 : <select name="time" id="movie_time">
+	  <option value="0" selected>-</option>
+	  <option value="1">05:30~07:20</option>
+	  <option value="2">08:00~09:50</option>
+	  <option value="3">12:30~14:20</option>
+	  <option value="4">15:00~16:50</option>
+	  <option value="5">18:20~20:10</option>
+	  <option value="6">21:10~23:00</option>
+	  <option value="7">23:50~01:40</option>
+	 </select><br>
+	 <input type="button" value="예매하기" id="book_button" onclick="showInfo();"/><br>
+	</fieldset>
+   </form>
+  </article>
+  <footer></footer>
+ </body>
+</html>

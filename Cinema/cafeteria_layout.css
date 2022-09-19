@@ -1,0 +1,6 @@
+/* style-layout */
+h3{padding:0; margin:0; text-align:center}
+article{display:block; padding:0; margin:0}
+figure{margin-left:120px; margin-top:50px; padding:0; display:inline-block; text-align:center}
+figcaption{margin:0; padding:0}
+#food_name{line-height:60px}

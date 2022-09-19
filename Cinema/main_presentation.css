@@ -1,0 +1,5 @@
+/* style-presentation */
+#login, #check_booking{background-color:silver; font-weight:bold}
+#login:hover, #check_booking:hover{cursor:pointer}
+#image_menu1, #image_menu2, #image_menu3, #image_menu4{border-width:10px; border-style:solid}
+#image_menu1:hover, #image_menu2:hover, #image_menu3:hover, #image_menu4:hover{transform:scale(1.035, 1.035); cursor:pointer}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>아이디/패스워드 찾기</title>
+  <link rel="stylesheet" type="text/css" href="find_id_pw_size.css"/>
+  <link rel="stylesheet" type="text/css" href="find_id_pw_layout.css"/>
+  <link rel="stylesheet" type="text/css" href="find_id_pw_presentation.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_size.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_layout.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_presentation.css"/> </head>
+ <body>
+  <header>
+   <a href="main.html" id="logo"><h2>BLACKBOX THEATER</h2></a> 
+  </header>
+  <nav>
+   <ul>
+    <li><a href="theater_info.html" id="Theater_info_title">극장 소개</a></li>
+    <li><a href="movie_list.html" id="Movie_list_title">상영 영화</a></li>
+    <li><a href="movie_booking.html" id="Movie_booking_title">영화 예매</a></li>
+    <li><a href="cafeteria.html" id="Cafeteria_title">카페테리아</a></li>
+   </ul>
+  </nav>
+  <article>
+   <div>
+    <h3>아이디/비밀번호 찾기</h3><br>
+    <form id="find_id_pw_box">
+	 <fieldset style="width:550px" align="right">
+	  <p>
+       이름 :
+	   <input type="text" name="f_name" id="id_find_name"/><br>
+       전화번호 :
+	   <input type="tel" name="f_tel" id="id_find_tel" pattern="[0][1][0-9][0-9]{4}[0-9]{4}"/><br>
+	   이메일 :
+	   <input type="email" name="f_email" id="id_find_email"/><br>
+	   <input type="submit" id="find_id" value="아이디 찾기"/>
+	  </p>
+     </fieldset>
+     <fieldset style="width:550px" align="right">
+	  <p>
+       이름 :
+	   <input type="text" name="f_name" id="pw_find_name"/><br>
+	   전화번호 :
+	   <input type="tel" name="f_tel" id="pw_find_tel" pattern="[0][1][0-9][0-9]{4}[0-9]{4}"/><br>
+	   이메일 :
+	   <input type="email" name="f_email" id="pw_find_email"/><br>
+	   아이디 :
+	   <input type="text" name="f_id" id="pw_find_id"/><br>
+	   <input type="submit" id="find_pw" value="비밀번호 찾기"/>
+	  </p>
+     </fieldset>
+	 <a href="login.html" id="go_to_login">로그인 창으로 이동</a>
+    </form>
+   </div>
+  </article>
+ </body>
+</html>

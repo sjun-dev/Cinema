@@ -1,0 +1,6 @@
+/* style-presentation */
+p{font-size:15pt; font-weight:bold}
+h3{color:orange; font-size:30pt}
+div{background:white; border:5px; border-style:solid; border-color:orange}
+input{font-weight:bold; font-size:15px}
+input:hover{color:red; cursor:pointer}

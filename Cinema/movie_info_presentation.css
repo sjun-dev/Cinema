@@ -1,0 +1,7 @@
+/* style-presentation */
+h3{border-bottom:solid; border-color:blue; border-width:5px; color:black; font-size:20pt}   
+p{font-size:20pt; font-weight:bold}
+div{font-size:15pt}
+#book_button, #trailer_button{font-size:15pt; font-weight:bold}
+#trailer_button:hover, #book_button:hover{cursor:pointer; color:red}
+#control_bar{font-size:20px; border-radius:40px; border-width:5px; border-style:solid; background-color:white; color:blue}

@@ -1,0 +1,7 @@
+/* style-presentation */
+h3{color:orange; font-size:30pt}
+#login_style, #unregistered_style{font-size:30px; color:orange}
+#user_id, #user_pw, #user_phone, #phone_pw{font-size:20px}
+#login_box, #unregistered_login_box{background:white; border:5px; border-style:solid; border-color:orange}
+#user_login, #unregistered_login{font-size:20px; font-weight:bold; color:white; background-color:orange}
+#search, #register{font-size:20px; text-decoration:underline}

@@ -1,0 +1,4 @@
+/* style-size */
+#user_id, #user_pw, #user_phone, #phone_pw{width:300px; height:40px}
+#login_box, #unregistered_login_box{width:40%; height:500px}
+#user_login, #unregistered_login{width:400px; height:60px}

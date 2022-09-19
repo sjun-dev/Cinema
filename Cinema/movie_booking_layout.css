@@ -1,0 +1,7 @@
+/* style-layout */
+fieldset{border:none; margin:0px auto}
+h3{padding:0; margin:0; text-align:center}
+p{padding:0; margin:0; text-align:center}
+article{display:block; padding:0; margin:0}
+#seats{table-layout:fixed; padding:0; margin-left:100px; text-align:center; empty-cells:hide}
+#book_button{text-align:center; vertical-align:middle}

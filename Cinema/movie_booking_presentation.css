@@ -1,0 +1,9 @@
+/* style-presentation */
+h3{color:black; font-size:40pt}
+p{color:black; font-size:50pt}
+td:hover{background:red; cursor:pointer}
+#seats{font-size:20pt; font-weight:bold}
+#SCREEN{font-size:50px}
+#adult, #kid, #seat_char, #seat_num, #movie_name, #movie_time, #movie_date{font-size:15pt}
+#book_button{font-size:15pt; font-weight:bold}
+#book_button:hover{color:red}

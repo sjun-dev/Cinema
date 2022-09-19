@@ -1,0 +1,5 @@
+/* style-layout */
+h3{text-align:center}
+article{display:block; padding:0; margin:0}
+figure{margin-left:120px; padding:0; display:inline-block; text-align:center}
+#ranking, #movie_name{line-height:60px}

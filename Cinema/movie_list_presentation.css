@@ -1,0 +1,6 @@
+/* style-presentation */
+h3{color:orange; font-size:30pt}
+figcaption{font-size:30px; font-weight:bold}
+#ranking{background-color:black; color:red; font-size:30px}
+#movie_name{background-color:black; color:white; font-size:30px}
+#movie_name:hover{color:red}

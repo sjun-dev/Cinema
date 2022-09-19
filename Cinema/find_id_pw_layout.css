@@ -1,0 +1,8 @@
+/* style-layout */
+fieldset{border:none; vertical-align:middle; margin:20px}
+h3{margin:0; text-align:center}
+p{padding:0; margin:0}
+article{display:block; text-align:center; padding:0; margin:0}
+div{display:inline-block; vertical-align:middle; margin:57px; padding:30px}
+#id_find_email, #id_find_name, #id_find_tel, #pw_find_email, #pw_find_id, #pw_find_name, #pw_find_tel{vertical-align:middle}
+#find_id, #find_pw{text-align:center}

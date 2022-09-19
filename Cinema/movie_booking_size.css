@@ -1,0 +1,7 @@
+/* style-size */
+fieldset{max-width:300px}
+article{width:100%; height:100%}
+#seats{width:90%}
+#adult, #kid, #seat_char, #seat_num{width:80px; height:40px}
+#movie_name, #movie_time, #movie_date{width:240px; height:40px}
+#book_button{width:100px; height:40px}

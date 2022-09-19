@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>예매 내역 확인</title>
+  <link rel="stylesheet" type="text/css" href="common_style_size.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_layout.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_presentation.css"/>
+  <link rel="stylesheet" type="text/css" href="check_booking_size.css"/>
+  <link rel="stylesheet" type="text/css" href="check_booking_layout.css"/>
+  <link rel="stylesheet" type="text/css" href="check_booking_presentation.css"/>
+ </head>
+ <body onload="pageLoad();">
+  <header>
+   <a href="main.html" id="logo"><h2>BLACKBOX THEATER</h2></a> 
+  </header>
+  <nav>
+   <ul>
+    <li><a href="theater_info.html" id="Theater_info_title">극장 소개</a></li>
+    <li><a href="movie_list.html" id="Movie_list_title">상영 영화</a></li>
+    <li><a href="movie_booking.html" id="Movie_booking_title">영화 예매</a></li>
+    <li><a href="cafeteria.html" id="cafeteria_title">카페테리아</a></li>
+   </ul>
+  </nav>
+  <article>
+   <div id="bookingList">
+    <h3>예매 내역</h3>
+	<br><br>
+    <script type="text/javascript">
+     function pageLoad(){
+	  count = 0;
+	  
+	  keys = [];
+	  
+	  for(i = 0; i < window.localStorage.length; i++){
+	   if(window.localStorage.key(i) != "count"){
+	    key = window.localStorage.key(i);
+		key = key.substring(7, key.length);
+		key = parseInt(key);
+	    keys.push(key);
+	   }
+	  }
+	  
+	  keys.sort(function(a, b){
+	   return a - b;
+	  });
+	  	  
+	  for(i = 0; i < keys.length; i++){
+	   count++;
+	   key = "booking" + keys[i];
+	   movieName = window.localStorage[key].split(',')[0];
+	   movieName = movieName.split(' : ')[1];
+	   button = '<input type="button" value="예매취소" id='+key+'>';
+	   image = '<image src="'+movieName+'.jpg">';
+	   detail = '<input type="button" value="상세내역" id='+key+'>';
+	   bookingList.innerHTML += image;
+	   bookingList.innerHTML += '<p>'+movieName+"</p>";
+	   bookingList.innerHTML += detail + button;
+	  }
+	  
+	  if(count == 0){
+	   bookingList.innerHTML += "<h4>예매한 영화가 없습니다.</h4>";
+	  }
+	  
+	  var buttons = document.getElementsByTagName("input");
+	   
+	  for(i = 0; i < buttons.length; i++){
+	   if(buttons[i].value == "예매취소"){
+	    buttons[i].onclick = function(){cancel(this.id);};
+	   }
+	   else{
+	    buttons[i].onclick = function(){showInfo(this.id);};
+	   }
+	  }
+	 }
+	 
+	 function showInfo(x){
+	  alert(window.localStorage[x]);  
+	 }
+	 
+	 function cancel(x){
+	  movieName = window.localStorage[x].split(',')[0];
+	  movieName = movieName.split(' : ')[1];
+	  result = confirm("["+movieName+"] 예매를 취소하시겠습니까?");
+	  if(result){
+	   window.localStorage.removeItem(x);
+	   bookingList.innerHTML = "<h3>예매 내역</h3><br><br>";
+	   pageLoad();
+	  }
+	 }
+    </script>
+   </div>
+  </article>
+ </body>
+</html>

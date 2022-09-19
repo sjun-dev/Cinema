@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>회원가입</title>
+  <link rel="stylesheet" type="text/css" href="register_size.css"/>
+  <link rel="stylesheet" type="text/css" href="register_layout.css"/>
+  <link rel="stylesheet" type="text/css" href="register_presentation.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_size.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_layout.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_presentation.css"/>
+ </head>
+ <body>
+  <header>
+   <a href="main.html" id="logo"><h2>BLACKBOX THEATER</h2></a> 
+  </header>
+  <nav>
+   <ul>
+    <li><a href="theater_info.html" id="Theater_info_title">극장 소개</a></li>
+    <li><a href="movie_list.html" id="Movie_list_title">상영 영화</a></li>
+    <li><a href="movie_booking.html" id="Movie_booking_title">영화 예매</a></li>
+    <li><a href="cafeteria.html" id="Cafeteria_title">카페테리아</a></li>
+   </ul>
+  </nav>
+  <article>
+   <div>
+    <h3>회원가입</h3><br><br>
+    <form id="register_box">
+     <fieldset style="width:600px" align="right">
+	  <p>
+       이름 :
+	   <input type="text" name="r_name" id="register_name"/><br>
+       전화번호 :
+	   <input type="tel" name="r_tel" id="register_tel" pattern="[0][1][0-9][0-9]{4}[0-9]{4}"/><br>
+	   이메일 :
+	   <input type="email" name="r_email" id="register_email"/><br>
+	   아이디 :
+	   <input type="text" name="r_id" id="register_id"/><br>
+	   <input type="submit" value="중복체크" id="valid_check"/><br>
+	   비밀번호 :
+	   <input type="password" name="r_pw" id="register_pw"/><br>
+	   비밀번호 확인 :
+	   <input type="password" name="pw_check" id="register_pw_check"/><br>
+	   <input type="submit" value="회원가입" id="register"><br><br>
+	  </p>
+     </fieldset>
+	 <a href="login.html" id="go_to_login">로그인 창으로 이동</a>
+    </form>
+   </div>
+  </article>
+ </body>
+</html>

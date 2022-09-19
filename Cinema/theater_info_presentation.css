@@ -1,0 +1,7 @@
+/* style-presentation */
+h3{color:orange; font-size:30pt}
+p{font-size:20pt}
+div{background:white; border:5px; border-style:solid; border-color:orange}
+#seats{font-size:20pt; font-weight:bold}
+#SCREEN{font-size:50px; font-weight:bold}
+#map{color:blue; text-decoration:underline; text-weight:bold}

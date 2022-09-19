@@ -1,0 +1,7 @@
+/* style-layout */
+h3{text-align:center}
+p{padding:0; margin:3px}
+article{display:block; padding:0; margin:0}
+div{display:inline-block; vertical-align:middle; margin:57px; padding:30px}
+#seats{table-layout:fixed; padding:0; margin-left:100px; width:90%; text-align:center; empty-cells:hide}
+#SCREEN{text-align:center}

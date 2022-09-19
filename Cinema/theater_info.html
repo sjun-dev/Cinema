@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>극장 정보</title>
+  <link rel="stylesheet" type="text/css" href="theater_info_size.css"/>
+  <link rel="stylesheet" type="text/css" href="theater_info_layout.css"/>
+  <link rel="stylesheet" type="text/css" href="theater_info_presentation.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_size.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_layout.css"/>
+  <link rel="stylesheet" type="text/css" href="common_style_presentation.css"/>
+ </head>
+ <body>
+  <header>
+   <a href="main.html" id="logo"><h2>BLACKBOX THEATER</h2></a> 
+  </header>
+  <nav>
+   <ul>
+    <li><a href="theater_info.html" id="Theater_info_title">극장 소개</a></li>
+    <li><a href="movie_list.html" id="Movie_list_title">상영 영화</a></li>
+    <li><a href="movie_booking.html" id="Movie_booking_title">영화 예매</a></li>
+    <li><a href="cafeteria.html" id="cafeteria_title">카페테리아</a></li>
+   </ul>
+  </nav>
+  <article>
+   <div><img src="location.jpg" height="500"/></div>
+   <div id="guide">
+    <h3>극장 정보</h3>
+	<p>
+	 <br>Tel) 02-718-5080<br>
+	 주소) 서울시 종로구 동숭동 1-60<br>
+	 <a href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%2B%EC%A2%85%EB%A1%9C%EA%B5%AC%2B%EB%8F%99%EC%88%AD%EB%8F%99%2B1-60/address/14137861.488628749,4520529.093078796,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EB%8F%99%EC%88%AD%EB%8F%99%201-60,jibun?c=14137837.9868206,4520526.5346021,19,0,0,0,dh" id="map">네이버 지도에서 보기</a><br><br>
+	 오시는 길<br>
+	 ▶ 지하철<br>
+	 4호선 혜화역에서 2번 출구<br>
+	 ▶ 버스<br>
+	 5,63-1,12,13,25,361 번 버스로 혜화역 하차<br><br>
+	 주차공간이 협소하기 때문에 자가용보다는 대중교통을 이용해서 오시는 것을 권장드립니다.
+	</p>
+   </div>
+   <br><br>
+   <h3>좌석배치도</h3><br><br>
+   <p id="SCREEN">SCREEN</p>
+   <table border="1" id="seats">
+	<tbody>
+	 <tr id="A"><td rowspan="6" colspan="4"></td><td>A1</td><td>A2</td><td>A3</td><td>A4</td><td>A5</td><td>A6</td>
+	 <td>A7</td><td>A8</td><td>A9</td><td>A10</td><td>A11</td><td>A12</td><td rowspan="5" colspan="4"></td></tr>
+	 <tr id="B"></td><td>B1</td><td>B2</td><td>B3</td><td>B4</td><td>B5</td><td>B6</td>
+	 <td>B7</td><td>B8</td><td>B9</td><td>B10</td><td>B11</td><td>B12</td></td></tr>
+	 <tr id="C"></td><td>C1</td><td>C2</td><td>C3</td><td>C4</td><td>C5</td><td>C6</td>
+	 <td>C7</td><td>C8</td><td>C9</td><td>C10</td><td>C11</td><td>C12</td></td></tr>
+	 <tr id="D"></td><td>D1</td><td>D2</td><td>D3</td><td>D4</td><td>D5</td><td>D6</td>
+	 <td>D7</td><td>D8</td><td>D9</td><td>D10</td><td>D11</td><td>D12</td></tr>
+	 <tr id="E"></td><td>E1</td><td>E2</td><td>E3</td><td>E4</td><td>E5</td><td>E6</td>
+	 <td>E7</td><td>E8</td><td>E9</td><td>E10</td><td>E11</td><td>E12</td></tr>
+	 <tr id="F"></td><td>F1</td><td>F2</td><td>F3</td><td>F4</td><td>F5</td><td>F6</td>
+	 <td>F7</td><td>F8</td><td>F9</td><td>F10</td><td>F11</td><td>F12</td></tr>
+	 <tr id="corridor"><td colspan="20"></td></tr>
+	 <tr id="corridor"><td colspan="20"></td></tr>
+	 <tr id="corridor"><td colspan="20"></td></tr>
+	 <tr id="G"></td><td>G1</td><td>G2</td><td>G3</td><td></td><td>G4</td><td>G5</td><td>G6</td>
+	 <td>G7</td><td>G8</td><td>G9</td><td>G10</td><td>G11</td><td>G12</td><td>G13</td><td>G14</td><td>G15</td>
+	 <td></td><td>G16</td><td>G17</td><td>G18</td></tr>
+	 <tr id="H"></td><td>H1</td><td>H2</td><td>H3</td><td></td><td>H4</td><td>H5</td><td>H6</td>
+	 <td>H7</td><td>H8</td><td>H9</td><td>H10</td><td>H11</td><td>H12</td><td>H13</td><td>H14</td><td>H15</td>
+	 <td></td><td>H16</td><td>H17</td><td>H18</td></tr>
+	 <tr id="I"></td><td>I1</td><td>I2</td><td>I3</td><td></td><td>I4</td><td>I5</td><td>I6</td>
+	 <td>I7</td><td>I8</td><td>I9</td><td>I10</td><td>I11</td><td>I12</td><td>I13</td><td>I14</td><td>I15</td>
+	 <td></td><td>I16</td><td>I17</td><td>I18</td></tr>
+	 <tr id="J"></td><td>J1</td><td>J2</td><td>J3</td><td></td><td>J4</td><td>J5</td><td>J6</td>
+	 <td>J7</td><td>J8</td><td>J9</td><td>J10</td><td>J11</td><td>J12</td><td>J13</td><td>J14</td><td>J15</td>
+	 <td></td><td>J16</td><td>J17</td><td>J18</td></tr>
+	 <tr id="K"></td><td>K1</td><td>K2</td><td>K3</td><td></td><td>K4</td><td>K5</td><td>K6</td>
+	 <td>K7</td><td>K8</td><td>K9</td><td>K10</td><td>K11</td><td>K12</td><td>K13</td><td>K14</td><td>K15</td>
+	 <td></td><td>K16</td><td>K17</td><td>K18</td></tr>
+	 <tr id="L"></td><td>L1</td><td>L2</td><td>L3</td><td></td><td>L4</td><td>L5</td><td>L6</td>
+	 <td>L7</td><td>L8</td><td>L9</td><td>L10</td><td>L11</td><td>L12</td><td>L13</td><td>L14</td><td>L15</td>
+	 <td></td><td>L16</td><td>L17</td><td>L18</td></tr>
+	</tbody>
+   </table><br><br>
+  </article>
+  <footer></footer>
+ </body>
+</html>
